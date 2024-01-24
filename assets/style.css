@@ -69,11 +69,6 @@ nav a {
 	z-index: 0;
 }
 
-.picture img {
-	width: 560px;
-	height: 558.5px;
-
-}
 #about-me {
 	flex: 2
 }
