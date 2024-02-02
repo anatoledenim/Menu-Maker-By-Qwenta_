@@ -16,7 +16,7 @@ galery.forEach(image => {
         })
         arrowPrev.addEventListener("click", function() {
             modalId--
-            imageModal.src = images[modalId]
+            imageModal.src = images[modalId] 
         })
     })
 }); 
