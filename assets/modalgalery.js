@@ -13,12 +13,10 @@ galery.forEach(image => {
         arrowNext.addEventListener("click", function() {
             modalId ++
             imageModal.src = images[modalId]
-            console.log(modalId)
         })
         arrowPrev.addEventListener("click", function() {
             modalId--
             imageModal.src = images[modalId]
-            console.log(modalId)
         })
     })
 }); 
