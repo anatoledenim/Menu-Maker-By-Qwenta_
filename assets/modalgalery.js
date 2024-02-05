@@ -12,7 +12,6 @@ galery.forEach(image => {
         }
         arrowNext.addEventListener("click", function() {
             modalId ++
-            console.log(modalId)
             imageModal.src = images[modalId]
             if (modalId !== 0) {
                 arrowPrev.classList.remove("arrow-hidden-true")
@@ -23,7 +22,6 @@ galery.forEach(image => {
         })
         arrowPrev.addEventListener("click", function() {
             modalId--
-            console.log(modalId)
             imageModal.src = images[modalId]
             if (modalId === 0 ) {
                 arrowPrev.classList.add("arrow-hidden-true")
