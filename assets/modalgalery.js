@@ -12,11 +12,25 @@ galery.forEach(image => {
         }
         arrowNext.addEventListener("click", function() {
             modalId ++
+            console.log(modalId)
             imageModal.src = images[modalId]
+            if (modalId !== 0) {
+                arrowPrev.classList.remove("arrow-hidden-true")
+            }
+            if (modalId === 8) {
+                arrowNext.classList.add("arrow-hidden-true")
+            }
         })
         arrowPrev.addEventListener("click", function() {
             modalId--
-            imageModal.src = images[modalId] 
+            console.log(modalId)
+            imageModal.src = images[modalId]
+            if (modalId === 0 ) {
+                arrowPrev.classList.add("arrow-hidden-true")
+            }
+            if (modalId !== 8) {
+                arrowNext.classList.remove("arrow-hidden-true")
+            }
         })
     })
 }); 
