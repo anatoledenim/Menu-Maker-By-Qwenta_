@@ -21,10 +21,9 @@ galery.forEach(image => {
         const arrowPrev = document.querySelector(".mg-prev")
         const arrowNext = document.querySelector(".mg-next")
         const imageModal = document.querySelector(".lightboxImage")
-        let modalId = e.target.dataset.id
-        if (modalId === 2) {
-            arrowPrev.classList.add("arrow-hidden-true")
-        }
+        let modalId = parseInt(e.target.dataset.id)
+        displayArrow(modalId, arrowPrev, arrowNext)
+        console.log(typeof modalId)
         arrowNext.addEventListener("click", function() {
             modalId ++
             imageModal.src = images[modalId]
