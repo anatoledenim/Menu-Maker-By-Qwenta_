@@ -9,7 +9,6 @@ const arrowNext=document.querySelector(".mg-next")
 const imageModal=document.querySelector(".lightboxImage")
 let modalId=parseInt(e.target.dataset.id)
 displayArrow(modalId,arrowPrev,arrowNext)
-console.log(typeof modalId)
 arrowNext.addEventListener("click",function(){modalId ++
 imageModal.src=images[modalId]
 displayArrow(modalId,arrowPrev,arrowNext)})
